@@ -1,0 +1,17 @@
+# Maven
+target/
+
+# Tomcat embarcado cria uma pasta de trabalho (tomcat.8080)
+tomcat.*/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# SO
+.DS_Store
+Thumbs.db
