@@ -1,0 +1,67 @@
+package br.com.lojaroupas.model;
+
+import java.math.BigDecimal;
+
+public class ItemPedido {
+
+    private Long id;
+    private Long produtoId;
+    private String nomeProduto;
+    private int quantidade;
+    private BigDecimal precoUnitario;
+
+    public ItemPedido() {
+    }
+
+    public ItemPedido(Long id, Long produtoId, String nomeProduto, int quantidade, BigDecimal precoUnitario) {
+        this.id = id;
+        this.produtoId = produtoId;
+        this.nomeProduto = nomeProduto;
+        this.quantidade = quantidade;
+        this.precoUnitario = precoUnitario;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(Long produtoId) {
+        this.produtoId = produtoId;
+    }
+
+    public String getNomeProduto() {
+        return nomeProduto;
+    }
+
+    public void setNomeProduto(String nomeProduto) {
+        this.nomeProduto = nomeProduto;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public BigDecimal getPrecoUnitario() {
+        return precoUnitario;
+    }
+
+    public void setPrecoUnitario(BigDecimal precoUnitario) {
+        this.precoUnitario = precoUnitario;
+    }
+
+    public BigDecimal getSubtotal() {
+        return precoUnitario.multiply(BigDecimal.valueOf(quantidade));
+    }
+}
