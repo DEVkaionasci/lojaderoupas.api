@@ -1,4 +1,4 @@
-# Loja de Roupas — API REST em Java (sem frameworks)
+# Loja de Roupas — API REST em Java
 
 Projeto final da disciplina **Padrões de Projeto em Aplicações Web** (IF Baiano — Prof. Éder Pereira dos Santos).
 
